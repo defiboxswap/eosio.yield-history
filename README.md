@@ -1,9 +1,9 @@
 # config
 config
-|- default.js
-|- prod.js
-|- test.js
-|- dev.js
+|- default.json
+|- prod.json
+|- test.json
+|- dev.json
 
 configure mysql connection 
 ```js
