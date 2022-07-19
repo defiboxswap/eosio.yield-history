@@ -1,0 +1,21 @@
+{
+  "name": "yield_history",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "config": "^3.0.1",
+    "eosjs": "^22.1.0",
+    "promise-mysql": "^3.3.1",
+    "text-encoding": "^0.7.0",
+    "ws": "^6.2.0",
+    "zlib": "^1.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start-test": ""
+  },
+  "author": "",
+  "license": "ISC"
+}
