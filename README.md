@@ -1,11 +1,12 @@
 # config
+```
 config
 |- default.json
 |- prod.json
 |- test.json
 |- dev.json
-
-configure mysql connection 
+```
+configure mysql connection,ws endpoint,abi endpoint
 ```js
 {
   "state_history_server": "ws://127.0.0.1:7777",
