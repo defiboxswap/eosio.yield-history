@@ -456,6 +456,8 @@ class HistoryTrace {
           await conn.query(`insert into dex_events(type, act_ids, block_num, timestamp) values (?, ?, ?, ?)`, [2, act_ids.join(','), block_num, block.timestamp]);
         }
       }
+      // delete dex_blocks
+      await conn.query('delete from dex_blocks where block_num < ?', [this.irreversible - 200]);
 
       //Insert block data
       await conn.query(`insert into dex_blocks(block_num,block_id) values (?, ?)`, [block_num, response.this_block.block_id]);
