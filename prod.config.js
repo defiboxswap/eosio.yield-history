@@ -1,6 +1,6 @@
 module.exports = {
     apps : [{
-        name: "tokenyield_history",
+        name: "eosioyield_history",
         script: "index.js",
         env: {
             NODE_ENV: "prod",

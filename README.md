@@ -1,4 +1,8 @@
-# config
+# EOS Yield+ history
+
+> EOS Yield+ grab history and save it to the databaseg.
+
+## config
 ```
 config
 |- default.json
@@ -20,30 +24,10 @@ configure mysql connection,ws endpoint,abi endpoint
 }
 ```
 
-# yield-history
-
-Grab history and save it to the database
-
-### Development
-
-```bash
-$ npm install -g pm2
-$ npm i
-$ node index.js
-```
-
 ### Deploy
 
-```bash
-$ npm start
-$ npm stop
+```sh
+npm install -g pm2
+npm i
+pm2 start prod.config.js
 ```
-
-### npm scripts
-
-- Use `npm run lint` to check code style.
-- Use `npm test` to run unit test.
-- Use `npm run autod` to auto detect dependencies upgrade, see [autod](https://www.npmjs.com/package/autod) for more detail.
-
-
-[egg]: https://eggjs.org
