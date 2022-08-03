@@ -5,13 +5,12 @@
   "filter-on": [
     "eosio.yield:createlog",
     "eosio.yield:metadatalog",
-    "eosio.yield:categorylog",
     "eosio.yield:statuslog",
     "eosio.yield:eraselog",
     "eosio.yield:contractslog",
     "eosio.yield:claimlog",
-    "eosio.yield:rewardslog"
+    "oracle.yield:updatelog"
   ],
   "filter-out": [],
-  "parse-abis": ["eosio.yield"]
+  "parse-abis": ["eosio.yield", "oracle.yield"]
 }
