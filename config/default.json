@@ -9,7 +9,7 @@
     "eosio.yield:eraselog",
     "eosio.yield:contractslog",
     "eosio.yield:claimlog",
-    "eosio.yield:rewards",
+    "eosio.yield:rewardslog",
     "oracle.yield:updatelog"
   ],
   "filter-out": [],
