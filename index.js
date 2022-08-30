@@ -158,7 +158,7 @@ class HistoryTrace {
     console.log(response);
   }
 
-  get_blocks_result_v1(response) {
+  get_blocks_result_v0(response) {
     this.blocksQueue.push(response);
     this.processBlocks();
   }
@@ -175,7 +175,7 @@ class HistoryTrace {
       let block, traces = [],
         deltas = [];
       if (response.block && response.block.length) {
-        block = response.block[1];
+        block = this.deserialize('signed_block', response.block);
       }
       if (response.traces && response.traces.length) {
         traces = this.deserialize('transaction_trace[]', response.traces);
